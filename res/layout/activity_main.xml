@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/main_header" />
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/id_indictor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentblue" >
+    </com.viewpagerindicator.TabPageIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/id_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

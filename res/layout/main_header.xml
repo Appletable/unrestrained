@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/title_background"
+    android:layout_height="wrap_content" >
+    
+    <RadioGroup
+            android:id="@+id/rg_xinmo_jiamo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_xinmo"
+                android:layout_width="61dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_xinmo"
+                android:checked="true"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="#ff27d9ff"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_jiamo"
+                android:layout_width="61.5dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_jiamo"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+</RelativeLayout>
